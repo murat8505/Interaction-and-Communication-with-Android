@@ -4,12 +4,12 @@ This course builds on the foundations of Android development. We will discuss to
 
 Topics include:
 
-Sharing and Search
-Sensors
-Connectivity
-Networking
-Service Integration
-Google Service Integration
-Administration, Accounts and Telephony
-Native Development
-Releasing
+- Sharing and Search
+- Sensors
+- Connectivity
+- Networking
+- Service Integration
+- Google Service Integration
+- Administration, Accounts and Telephony
+- Native Development
+- Releasing
