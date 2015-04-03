@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                tools:context="com.example.joeroger.samplesearchshare.fragment.AnimationFragment">
+
+    <Space
+        android:id="@+id/center_padding"
+        android:layout_width="16dp"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/view_animation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/center_padding"
+        android:layout_toStartOf="@id/center_padding"
+        android:text="View Animation"
+        />
+
+    <Button
+        android:id="@+id/prop_animation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/center_padding"
+        android:layout_toRightOf="@id/center_padding"
+        android:text="Prop Animation"
+        />
+
+    <!-- Homework square container, no padding -->
+    <com.example.joeroger.samplesearchshare.view.RingView
+        android:id="@+id/ring_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/view_animation_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        app:leftColor="@color/grey_400"
+        app:paintSize="8dp"
+        app:rightColor="@color/colorPrimaryDark"/>
+</RelativeLayout>

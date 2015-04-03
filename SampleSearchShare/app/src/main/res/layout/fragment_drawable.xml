@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                tools:context="com.example.joeroger.samplesearchshare.fragment.DrawableFragment">
+
+    <!-- Homework square container, no padding -->
+    <com.example.joeroger.samplesearchshare.view.RingView
+        android:id="@+id/default_hw"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/translucent_black"
+        app:leftColor="@color/grey_300"
+        app:paintSize="8dp"
+        app:rightColor="@color/colorAccent"/>
+
+    <!-- Homework square container with even padding -->
+    <com.example.joeroger.samplesearchshare.view.RingView
+        android:id="@+id/default_hw_padding"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/translucent_black"
+        android:padding="8dp"
+        app:leftColor="@color/grey_300"
+        app:paintSize="8dp"
+        app:rightColor="@color/colorAccent"/>
+
+    <!-- Bonus 1. support odd size containers and uneven padding -->
+    <com.example.joeroger.samplesearchshare.view.RingView
+        android:id="@+id/default_bonus_1"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/default_hw"
+        android:layout_marginTop="16dp"
+        android:background="@color/translucent_black"
+        android:paddingBottom="0dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="0dp"
+        android:paddingTop="60dp"
+        app:leftColor="@color/grey_300"
+        app:paintSize="8dp"
+        app:rightColor="@color/colorAccent"/>
+
+    <!-- Bonus 2. Support altering progress -->
+    <com.example.joeroger.samplesearchshare.view.RingView
+        android:id="@+id/default_hw_bonus_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/default_hw_padding"
+        android:layout_marginTop="16dp"
+        android:background="@color/translucent_black"
+        android:padding="8dp"
+        app:leftColor="@color/grey_300"
+        app:paintSize="8dp"
+        app:progress="25"
+        app:rightColor="@color/colorAccent"/>
+
+    <!-- Floating Action Button drawable simulation. -->
+    <ImageView
+        android:id="@+id/fab_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:src="@drawable/fab_button"/>
+</RelativeLayout>

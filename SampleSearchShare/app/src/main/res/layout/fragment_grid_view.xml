@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.joeroger.samplesearchshare.fragment.GridViewFragment">
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:columnWidth="@dimen/grid_columnWidth"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/grid_view_horizontalSpacing"
+        android:numColumns="@integer/numColumns"
+        android:paddingBottom="@dimen/grid_view_verticalSpacing"
+        android:paddingEnd="@dimen/grid_view_horizontalSpacing"
+        android:paddingLeft="@dimen/grid_view_horizontalSpacing"
+        android:paddingRight="@dimen/grid_view_horizontalSpacing"
+        android:paddingStart="@dimen/grid_view_horizontalSpacing"
+        android:paddingTop="@dimen/grid_view_verticalSpacing"
+        android:scrollbarStyle="outsideOverlay"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/grid_view_verticalSpacing"
+        tools:listitem="@layout/item_grid"/>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/grid_empty_text"
+        android:visibility="gone"/>
+</FrameLayout>

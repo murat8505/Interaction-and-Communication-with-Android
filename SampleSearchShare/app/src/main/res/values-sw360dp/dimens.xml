@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default width for phones that are 360dp wide (360-56) -->
+    <dimen name="navigation_drawer_width">304dp</dimen>
+</resources>

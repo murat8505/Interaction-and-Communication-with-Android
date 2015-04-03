@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default width for tablets that are 64dp * 5 wide (320) -->
+    <dimen name="navigation_drawer_width">320dp</dimen>
+
+    <!-- only want spacing if on tablet so using sw480dp to indicate -->
+    <dimen name="grid_view_verticalSpacing">16dp</dimen>
+    <dimen name="grid_view_horizontalSpacing">16dp</dimen>
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.example.joeroger.samplesearchshare"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.TopLevelActivity"
+            android:label="@string/title_activity_top_level"
+            android:theme="@style/DrawerAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <!-- Filter to accept "text" send_to -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ContactDetailActivity"
+            android:label="@string/title_activity_contact_detail"
+            android:parentActivityName=".activity.TopLevelActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.joeroger.samplesearchshare.activity.TopLevelActivity"/>
+            <!-- You need to add search filter and reference your searchable configuration in the
+                 activity issuing the search even if you plan to handle manually. If you want this to be-->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".activity.TopLevelActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.joeroger.samplesearchshare.activity.TopLevelActivity"/>
+        </activity>
+        <activity
+            android:name=".activity.AddContactActivity"
+            android:label="@string/title_activity_add_contact"
+            android:parentActivityName=".activity.TopLevelActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.joeroger.samplesearchshare.activity.TopLevelActivity"/>
+        </activity>
+
+        <receiver android:name=".widget.SimpleWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/simple_widget_info"/>
+        </receiver>
+        <receiver
+            android:name=".receiver.NotificationDeletedReceiver"
+            android:enabled="true"
+            android:exported="false">
+        </receiver>
+
+        <provider
+            android:name=".provider.ContactProvider"
+            android:authorities="${applicationId}.provider.ContactProvider"
+            android:enabled="true"
+            android:exported="false">
+        </provider>
+
+        <service
+            android:name=".service.ContactIntentService"
+            android:exported="false"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Using sw480dp which is smallest width for "large" device which indicates tablet.
+         Using this vs w480dp to ensure all phones no matter orientation use only one column
+         Any sw between 480 and 600 will meet the requirements of HW -->
+    <!-- "-1" corresponds to AUTO_FIT -->
+    <integer name="numColumns">-1</integer>
+</resources>

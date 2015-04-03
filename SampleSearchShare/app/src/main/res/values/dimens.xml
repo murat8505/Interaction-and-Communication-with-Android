@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="action_bar_elevation">8dp</dimen>
+
+    <!-- Default width for phones that are 320dp wide (320-56) -->
+    <dimen name="navigation_drawer_width">264dp</dimen>
+    <dimen name="default_status_bar_height">24dp</dimen>
+
+    <!-- Override appcompat so size is consistent bug 80749 -->
+    <dimen name="abc_text_size_body_1_material">14sp</dimen>
+    <dimen name="abc_text_size_body_2_material">14sp</dimen>
+
+    <!-- account for image size and align text at 72dp -->
+    <dimen name="drawer_item_paddingLeft">12dp</dimen>
+    <dimen name="drawer_drawablePadding">28dp</dimen>
+
+    <!-- contact dimensions -->
+    <dimen name="contact_list_tablet_width">360dp</dimen>
+
+    <!-- no spacing if on phone -->
+    <dimen name="grid_view_verticalSpacing">0dp</dimen>
+    <dimen name="grid_view_horizontalSpacing">0dp</dimen>
+    <dimen name="image_size">80dp</dimen>
+    <dimen name="grid_columnWidth">320dp</dimen>
+    <dimen name="grid_item_vertical_margin">8dp</dimen>
+    <dimen name="component_margin">8dp</dimen>
+    <dimen name="text_margin">4dp</dimen>
+    <dimen name="animation_100dp">100dp</dimen>
+    <dimen name="widget_margin">8dp</dimen>
+
+</resources>

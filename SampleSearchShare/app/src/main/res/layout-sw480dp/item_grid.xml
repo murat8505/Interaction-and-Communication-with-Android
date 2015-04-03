@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Slight cheat here. Using the foreground on a FrameLayout to provide click feedback
+     An alternate solution is to wrap the image in a state drawable, but that is
+     more involved to get right... -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <!-- Using adjust view bounds to help fill the grid. If you had real images
+         you would need to manage download size compared with expected grid sizes
+         so the image is not adjusted to much. However this is a trick you will see in
+         a lot of places to fit an image into a square. The exact scale type likely
+         will depend on the type and size of images -->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:minHeight="@dimen/image_size"
+        android:minWidth="@dimen/image_size"
+        android:scaleType="centerCrop"
+        android:src="@android:color/holo_green_dark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/subTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/grid_item_vertical_margin"
+            android:layout_marginEnd="@dimen/component_margin"
+            android:layout_marginLeft="@dimen/component_margin"
+            android:layout_marginRight="@dimen/component_margin"
+            android:layout_marginStart="@dimen/component_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            android:ellipsize="end"
+            android:maxLines="@integer/subTitleMaxLines"
+            android:text="@string/item_subtitle_sample"
+            android:textAppearance="@style/TextAppearanceBody1Inverse"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/subTitle"
+            android:layout_marginEnd="@dimen/component_margin"
+            android:layout_marginLeft="@dimen/component_margin"
+            android:layout_marginRight="@dimen/component_margin"
+            android:layout_marginStart="@dimen/component_margin"
+            android:ellipsize="end"
+            android:maxLines="@integer/titleMaxLines"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
+            tools:text="Grid Item 1"/>
+
+    </RelativeLayout>
+</FrameLayout>

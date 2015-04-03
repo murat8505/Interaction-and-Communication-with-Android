@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Since providing version for API 14-20 using Holo parent -->
+    <style name="RedButtonStyle" parent="android:Widget.Holo.Light.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <!-- Using background from Android asset studio -->
+        <item name="android:background">@drawable/accent_btn_default_holo_light</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+    </style>
+
+    <style name="WidgetButtonStyle" parent="RedButtonStyle"/>
+
+    <style name="TextAppearanceBody1Inverse" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Layout for query suggestion rows -->
+        <item name="suggestionRowLayout">@layout/search_dropdown_item_icons_2line</item>
+    </style>
+</resources>

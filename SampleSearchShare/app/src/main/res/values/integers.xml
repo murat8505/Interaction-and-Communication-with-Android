@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="numColumns">1</integer>
+    <integer name="titleMaxLines">2</integer>
+    <integer name="subTitleMaxLines">2</integer>
+</resources>

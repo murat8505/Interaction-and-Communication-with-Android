@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drawerItems">
+        <item>@string/contacts</item>
+        <item>@string/gridView</item>
+        <item>@string/drawables</item>
+        <item>@string/animation</item>
+        <item>Receive Share</item>
+    </string-array>
+
+    <array name="drawerImages">
+        <item>@drawable/ic_action_contacts</item>
+        <item>@drawable/ic_action_grid</item>
+        <item>@drawable/ic_action_image_palette</item>
+        <item>@drawable/ic_action_image_palette</item>
+        <item>@drawable/ic_action_image_palette</item>
+    </array>
+
+    <string-array name="listItems">
+        <item>Value 1</item>
+        <item>Value 2</item>
+        <item>Value 3</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>value1</item>
+        <item>value2</item>
+        <item>value3</item>
+    </string-array>
+</resources>

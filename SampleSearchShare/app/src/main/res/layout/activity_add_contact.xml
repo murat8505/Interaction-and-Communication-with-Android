@@ -1,0 +1,24 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.joeroger.samplesearchshare.activity.AddContactActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/addContactToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlayDarkActionBar"/>
+
+    <fragment
+        android:id="@+id/add_contact_fragment"
+        android:name="com.example.joeroger.samplesearchshare.fragment.AddContactFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_add_contact"/>
+</LinearLayout>

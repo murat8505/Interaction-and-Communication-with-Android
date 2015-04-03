@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Separate style for API 21. Use material as parent which only avail 21+
+       This also allows the "ripple" effect unique to API 21 on press to remain -->
+    <style name="RedButtonStyle" parent="android:Widget.Material.Light.Button">
+        <!-- Theme specifies the colorButtonNormal, so no background specified -->
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="WidgetButtonStyle" parent="RedButtonStyle">
+        <item name="android:background">@drawable/accent_btn_default_holo_light</item>
+    </style>
+</resources>
