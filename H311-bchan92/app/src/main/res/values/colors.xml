@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_blue_500">#03A9F4</color>
+    <color name="light_blue_700">#0288D1</color>
+    <color name="blue_A400">#2979FF</color>
+    <color name="blue_A700">#2962FF</color>
+
+    <color name="colorPrimary">@color/light_blue_500</color>
+    <color name="colorPrimaryDark">@color/light_blue_700</color>
+    <color name="colorAccent">@color/blue_A400</color>
+</resources>
