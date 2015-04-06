@@ -1,10 +1,12 @@
-package com.example.bchan92.homework1;
+package com.example.bchan92.homework1.activity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.bchan92.homework1.R;
 
 
 public class MainActivity extends ActionBarActivity {
