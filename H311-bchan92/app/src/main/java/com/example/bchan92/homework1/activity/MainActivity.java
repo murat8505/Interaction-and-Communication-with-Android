@@ -8,7 +8,6 @@ import android.view.MenuItem;
 
 import com.example.bchan92.homework1.R;
 
-
 public class MainActivity extends ActionBarActivity {
 
     @Override
