@@ -7,11 +7,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 
 import com.example.bchan92.homework1.R;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity
+        implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,15 +21,7 @@ public class MainActivity extends ActionBarActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.topLevelToolBar);
         setSupportActionBar(toolbar);
 
-        // start forecast activity if button is pressed
-        Button forecast_button = (Button) findViewById(R.id.forecast_button);
-
-        forecast_button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplication(), ForecastActivity.class);
-                startActivity(intent);
-            }
-        });
+        findViewById(R.id.forecast_button).setOnClickListener(this);
     }
 
 
@@ -55,5 +47,21 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+
+        Intent intent = null;
+        switch (id) {
+            case R.id.forecast_button:
+                intent = ForecastActivity.buildIntent(this);
+                break;
+        }
+
+        if (intent != null) {
+            startActivity(intent);
+        }
     }
 }

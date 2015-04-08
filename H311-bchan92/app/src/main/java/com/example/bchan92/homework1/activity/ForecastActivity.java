@@ -1,5 +1,7 @@
 package com.example.bchan92.homework1.activity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,6 +13,10 @@ import com.example.bchan92.homework1.fragment.ForecastFragment;
 
 public class ForecastActivity extends ActionBarActivity
     implements ForecastFragment.ForecastFragmentListener {
+
+    public static Intent buildIntent(Context context) {
+        return new Intent(context, ForecastActivity.class);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
