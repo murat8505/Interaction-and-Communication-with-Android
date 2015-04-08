@@ -1,42 +1,33 @@
 package com.example.bchan92.homework1.activity;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
+import android.support.v7.widget.Toolbar;
 
 import com.example.bchan92.homework1.R;
+import com.example.bchan92.homework1.fragment.ForecastFragment;
 
-public class MainActivity extends ActionBarActivity {
+public class ForecastActivity extends ActionBarActivity
+    implements ForecastFragment.ForecastFragmentListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_forecast);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.topLevelToolBar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.forecastToolBar);
         setSupportActionBar(toolbar);
 
-        // start forecast activity if button is pressed
-        Button forecast_button = (Button) findViewById(R.id.forecast_button);
-
-        forecast_button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplication(), ForecastActivity.class);
-                startActivity(intent);
-            }
-        });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_forecast, menu);
         return true;
     }
 
@@ -48,12 +39,15 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.add_city) {
-            return true;
-        } else if (id == R.id.action_settings) {
+        if (id == R.id.action_settings) {
             return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onDaySelected() {
+
     }
 }

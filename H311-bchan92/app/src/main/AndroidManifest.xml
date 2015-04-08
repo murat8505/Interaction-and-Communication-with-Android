@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.ForecastActivity"
+            android:label="@string/forecast_activity_title"
+            android:parentActivityName=".activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.bchan92.homework1.activity.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
