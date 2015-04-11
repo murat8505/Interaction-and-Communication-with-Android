@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SampleNetworking</string>
+    <string name="title_activity_main">Seattle 911 Incidents</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="empty_string">No 911 data is available</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
