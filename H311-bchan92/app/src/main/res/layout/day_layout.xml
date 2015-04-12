@@ -8,24 +8,32 @@
     <TextView
         android:id="@+id/day_of_the_week"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
         android:text="WED"/>
 
     <ImageView
         android:id="@+id/weather_image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_sunny"/>
 
     <TextView
         android:id="@+id/high_temp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
         android:text="58"/>
 
     <TextView
         android:id="@+id/low_temp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:textSize="12dp"
         android:text="46"/>
 
 </LinearLayout>
