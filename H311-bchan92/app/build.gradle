@@ -10,6 +10,7 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -22,4 +23,9 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.0.0'
+
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.google.android.gms:play-services-base:7.0.0'
+
+    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
 }
