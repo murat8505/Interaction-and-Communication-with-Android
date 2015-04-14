@@ -28,6 +28,13 @@
                 android:value="com.example.bchan92.homework1.activity.MainActivity" />
         </activity>
 
+        <provider
+            android:name=".provider.CurrentConditionsProvider"
+            android:authorities="${applicationId}.provider.CurrentConditionsProvider"
+            android:enabled="true"
+            android:exported="false" >
+        </provider>
+
         <!-- Adding Google Play Services -->
         <meta-data
             android:name="com.google.android.gms.version"
