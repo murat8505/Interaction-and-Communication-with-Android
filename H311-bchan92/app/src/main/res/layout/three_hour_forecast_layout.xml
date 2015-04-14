@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/paddingSize"
+    android:paddingLeft="@dimen/paddingSize"
+    android:paddingRight="@dimen/paddingSize"
+    android:paddingStart="@dimen/paddingSize"
+    android:paddingTop="@dimen/paddingSize">
+
+    <ImageView
+        android:id="@+id/weather_image"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        android:src="@drawable/ic_sunny"/>
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="67"/>
+
+    <TextView
+        android:id="@+id/weather_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sunny"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9:48 PM"/>
+</LinearLayout>

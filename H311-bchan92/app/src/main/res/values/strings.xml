@@ -8,6 +8,11 @@
 
     <string name="api_key">8daa38a1b54d0ef6b677b13b1ec828df</string>
 
+    <string name="current_condition">Current Condition</string>
+    <string name="current_temp">Current Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind Speed</string>
+
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

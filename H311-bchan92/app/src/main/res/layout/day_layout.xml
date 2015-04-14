@@ -1,39 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/paddingSize"
+    android:paddingLeft="@dimen/paddingSize"
+    android:paddingRight="@dimen/paddingSize"
+    android:paddingStart="@dimen/paddingSize"
+    android:paddingTop="@dimen/paddingSize">
 
     <TextView
         android:id="@+id/day_of_the_week"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_height="match_parent"
         android:textSize="16sp"
         android:text="WED"/>
 
+    <LinearLayout
+        android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/high_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="58"/>
+
+        <TextView
+            android:id="@+id/low_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="46"/>
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/weather_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        android:layout_marginLeft="70dp"
         android:src="@drawable/ic_sunny"/>
 
-    <TextView
-        android:id="@+id/high_temp"
+    <View
+        android:id="@+id/divider"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:textSize="14sp"
-        android:text="58"/>
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:listDivider"
+        tools:ignore="InconsistentLayout"/>
 
-    <TextView
-        android:id="@+id/low_temp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="11dp"
-        android:textSize="12dp"
-        android:text="46"/>
-
-</LinearLayout>
+</RelativeLayout>
