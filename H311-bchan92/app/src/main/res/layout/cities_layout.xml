@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/paddingSize"
+    android:paddingLeft="@dimen/paddingSize"
+    android:paddingRight="@dimen/paddingSize"
+    android:paddingStart="@dimen/paddingSize"
+    android:paddingTop="@dimen/paddingSize">
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:text="Seattle"/>
+
+    <TextView
+        android:id="@+id/current_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/city_name"
+        android:layout_marginLeft="100dp"
+        android:textSize="18sp"
+        android:text="43"/>
+
+</LinearLayout>
