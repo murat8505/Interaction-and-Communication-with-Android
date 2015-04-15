@@ -3,7 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="forecast_activity_title">5 Day Forecast</string>
+    <string name="forecast_activity_title">Forecast</string>
     <string name="action_add_city">Add City</string>
 
     <string name="api_key">8daa38a1b54d0ef6b677b13b1ec828df</string>
