@@ -1,12 +1,15 @@
 package com.example.bchan92.homework1.activity;
 
 import android.content.Intent;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import com.example.bchan92.homework1.R;
 
@@ -20,8 +23,33 @@ public class MainActivity extends ActionBarActivity
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.topLevelToolBar);
         setSupportActionBar(toolbar);
-
         findViewById(R.id.forecast_button).setOnClickListener(this);
+
+//        setSupportActionBar((Toolbar) findViewById(R.id.topLevelToolBar));
+//
+//        // Disable the default title
+//        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+//        // Setup the navigation spinner
+//        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+//
+//        // Use action bar's themed context for spinner
+//        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+//                // Using themed context to ensure text is white...
+//                getSupportActionBar().getThemedContext(),
+//                R.layout.item_spinner_title,
+//                android.R.id.text1,
+//                getResources().getStringArray(R.array.cities));
+//
+//        adapter.setDropDownViewResource(R.layout.spinner_dropdown);
+//        spinner.setAdapter(adapter);
+//        //spinner.setOnItemSelectedListener(this);
+//
+//        spinner.setSelection(0);
+//
+//        // If toolbar elevated, then the spinner also tries to be elevated.
+//        // This looks ugly on Android 5.0+. Set elevation to 0 to prevent
+//        ViewCompat.setElevation(spinner, 0);
     }
 
 

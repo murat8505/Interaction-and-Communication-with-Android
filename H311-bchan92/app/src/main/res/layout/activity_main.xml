@@ -13,14 +13,31 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?colorPrimary"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:theme="@style/ThemeOverlayDarkActionBar"/>
+        app:theme="@style/ThemeOverlayDarkActionBar">
+
+        <!--<Spinner-->
+            <!--android:id="@+id/spinner"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+    </android.support.v7.widget.Toolbar>
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/fragmentContainer"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
 
     <Button
         android:id="@+id/forecast_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Show forecast"
+        android:text="Seattle forecast"
         android:textColor="@android:color/white"
         android:layout_margin="10dp"/>
+
+    <!--<ListView-->
+        <!--android:id="@+id/cities_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--tools:layout="@layout/cities_layout"/>-->
 
 </LinearLayout>
