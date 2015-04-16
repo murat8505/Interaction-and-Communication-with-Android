@@ -32,7 +32,8 @@
         android:layout_height="wrap_content"
         android:text="Seattle forecast"
         android:textColor="@android:color/white"
-        android:layout_margin="10dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
 
     <!--<ListView-->
         <!--android:id="@+id/cities_list"-->
