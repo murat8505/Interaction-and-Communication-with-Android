@@ -4,11 +4,6 @@ import android.content.ContentValues;
 
 import com.example.bchan92.homework1.provider.CurrentConditionsContract;
 
-import java.util.Calendar;
-
-/**
- * Created by Brian on 4/16/15.
- */
 public class DataUtilities {
 
     static ContentValues createInsertValues() {

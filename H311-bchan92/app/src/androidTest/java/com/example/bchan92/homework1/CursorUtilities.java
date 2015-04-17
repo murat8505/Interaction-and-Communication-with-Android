@@ -5,7 +5,6 @@ import android.database.Cursor;
 import android.provider.BaseColumns;
 
 import com.example.bchan92.homework1.provider.CurrentConditionsContract;
-import com.example.bchan92.homework1.provider.ForecastContract;
 
 import java.util.Map;
 import java.util.Set;
@@ -15,9 +14,6 @@ import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.assertTrue;
 
-/**
- * Created by Brian on 4/16/15.
- */
 public class CursorUtilities {
 
     public static void validateCursor(String error, Cursor valueCursor, ContentValues[] valuesArray) {
