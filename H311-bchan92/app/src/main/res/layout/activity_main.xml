@@ -13,18 +13,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?colorPrimary"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:theme="@style/ThemeOverlayDarkActionBar">
-
-        <!--<Spinner-->
-            <!--android:id="@+id/spinner"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"/>-->
-    </android.support.v7.widget.Toolbar>
-
-    <!--<FrameLayout-->
-        <!--android:id="@+id/fragmentContainer"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"/>-->
+        app:theme="@style/ThemeOverlayDarkActionBar"/>
 
     <Button
         android:id="@+id/forecast_button"
