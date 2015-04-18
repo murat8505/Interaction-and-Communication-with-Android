@@ -21,7 +21,7 @@ public class CurrentConditionsContract {
         public static final String CURRENT_TEMP = "temp";
         public static final String HUMIDITY = "humidity";
         public static final String WIND_SPEED = "speed";
-        public static final String CITY_NAME = "city_name"; // not sure
+        public static final String CITY_NAME = "name";
     }
 
     public static final long NO_CONDITIONS_ID = -1;
