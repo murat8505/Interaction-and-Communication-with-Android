@@ -44,8 +44,7 @@
                 android:id="@+id/current_condition_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="scattered clouds"/>
+                android:layout_marginLeft="10dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -65,8 +64,7 @@
                 android:id="@+id/current_temp_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="46.19"/>
+                android:layout_marginLeft="10dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -86,8 +84,7 @@
                 android:id="@+id/humidity_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="75"/>
+                android:layout_marginLeft="10dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -107,8 +104,7 @@
                 android:id="@+id/wind_speed_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="11.15"/>
+                android:layout_marginLeft="10dp"/>
         </LinearLayout>
 
         <fragment
