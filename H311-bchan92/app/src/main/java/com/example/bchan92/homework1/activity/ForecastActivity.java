@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
 
 import com.example.bchan92.homework1.R;
 import com.example.bchan92.homework1.fragment.ForecastListFragment;
@@ -27,6 +28,16 @@ public class ForecastActivity extends ActionBarActivity
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        setCurrentConditions();
+    }
+
+    private void setCurrentConditions() {
+        TextView current_conditions = (TextView) findViewById(R.id.current_condition_status);
+        TextView current_temp = (TextView) findViewById(R.id.current_temp_text);
+        TextView humidity = (TextView) findViewById(R.id.humidity_text);
+        TextView wind_speed = (TextView) findViewById(R.id.wind_speed_text);
+
     }
 
     @Override
