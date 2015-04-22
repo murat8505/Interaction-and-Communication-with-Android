@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.samplebackgroundnetworking" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".provider.Seattle911Provider"
+            android:authorities="com.example.samplebackgroundnetworking.provider.Seattle911Provider"
+            android:enabled="true"
+            android:exported="false" >
+        </provider>
+
+        <service
+            android:name=".service.NetworkIntentService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".service.NetworkJobService"
+            android:enabled="@bool/use_job_service"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name=".receiver.AlarmBroadcastReceiver"
+            android:enabled="@bool/use_alarm_service"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.example.samplebackgroundnetworking.receiver.action.ALARM_TRIGGERED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- This receiver is disabled by default. It will only be enabled if the main activity
+             detects there is no connectivity. The receiver will disable itself if connectivity
+             is restored while app is running, or by the main activity during on pause -->
+        <receiver
+            android:name=".receiver.ConnectivityBroadcastReceiver"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Adding Google Play Services -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>
