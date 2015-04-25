@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Sample Places</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_license">License</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_image">ImageActivity</string>
+
+    <string name="play_services_error">Failed to resolve Google Play Services error. Restart app to try again</string>
+    <array name="imageUrls">
+        <item>http://openweathermap.org/img/w/01d.png</item>
+        <item>http://openweathermap.org/img/w/01n.png</item>
+        <item>http://openweathermap.org/img/w/02d.png</item>
+        <item>http://openweathermap.org/img/w/02n.png</item>
+        <item>http://openweathermap.org/img/w/03d.png</item>
+        <item>http://openweathermap.org/img/w/03n.png</item>
+        <item>http://openweathermap.org/img/w/04d.png</item>
+        <item>http://openweathermap.org/img/w/04n.png</item>
+        <item>http://openweathermap.org/img/w/09d.png</item>
+        <item>http://openweathermap.org/img/w/09n.png</item>
+        <item>http://openweathermap.org/img/w/10d.png</item>
+        <item>http://openweathermap.org/img/w/10n.png</item>
+        <item>http://openweathermap.org/img/w/11d.png</item>
+        <item>http://openweathermap.org/img/w/11n.png</item>
+        <item>http://openweathermap.org/img/w/13d.png</item>
+        <item>http://openweathermap.org/img/w/13n.png</item>
+        <item>http://openweathermap.org/img/w/50d.png</item>
+        <item>http://openweathermap.org/img/w/50n.png</item>
+    </array>
+    <string name="title_activity_license">LicenseActivity</string>
+</resources>

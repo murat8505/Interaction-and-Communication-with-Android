@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.joeroger.sampleplaces.fragment.PlacesFragment">
+
+    <ImageView
+        android:id="@+id/attribution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:background="#0F000000"
+        android:src="@drawable/powered_by_google_light"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/attribution"
+        android:layout_alignParentTop="true"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/attribution"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="No places found"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+</RelativeLayout>
