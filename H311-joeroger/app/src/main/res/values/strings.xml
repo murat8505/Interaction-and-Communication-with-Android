@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">H311-joeroger</string>
+
+
+    <string name="current_conditions">Current Conditions</string>
+    <string name="temperature">%1$d\u00B0</string>
+    <string name="pressure">%1$.2f in</string>
+    <string name="wind">%1$s at %2$.1f mph</string>
+    <string name="wind_two_line">%1$s\n%2$.1f mph</string>
+    <string name="humidity">%1$d%%</string>
+    <string name="title_activity_forecast_detail">ForecastDetailActivity</string>
+    <string name="wind_label">Wind:</string>
+    <string name="daily_high">Daily High</string>
+    <string name="pressure_label">Pressure:</string>
+    <string name="humidity_label">Humidity:</string>
+</resources>
