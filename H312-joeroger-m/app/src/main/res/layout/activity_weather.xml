@@ -1,0 +1,68 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joeroger.homework2.activity.WeatherActivity">
+
+    <!-- The app bar layout, allows for "hiding" the toolbar, or other options
+     when the view scrolls. For this activity, nothing will happen, however, we
+     are using the coordinator layout because adding a snackbar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppThemeOverlayActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?colorPrimary"
+            android:theme="@style/AppThemeOverlayActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <Spinner
+                android:id="@+id/city_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- The view paired with the app bar, needs to utilize the app bar scrolling
+    view behavior. Otherwise, top of content will be tucked under scroll bar.
+     Then nested scroll view is required to notifiy the parent of "scroll" actions
+     so it can handle them -->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <fragment
+                android:id="@+id/conditions_fragment"
+                android:name="com.example.joeroger.homework2.fragment.ConditionsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_conditions"/>
+
+            <fragment
+                android:id="@+id/daily_forecast_fragment"
+                android:name="com.example.joeroger.homework2.fragment.DailyForecastFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                tools:layout="@layout/fragment_daily_forecast"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

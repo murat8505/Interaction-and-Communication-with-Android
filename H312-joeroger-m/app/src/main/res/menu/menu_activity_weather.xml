@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.joeroger.homework2.activity.WeatherActivity">
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_action_content_add"
+        android:orderInCategory="100"
+        android:title="@string/action_add"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/toggle_favorite"
+        android:orderInCategory="105"
+        android:title="@string/remove_favorite"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="110"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_open_source"
+        android:orderInCategory="111"
+        android:title="@string/action_open_source"
+        app:showAsAction="never"/>
+
+</menu>

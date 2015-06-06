@@ -1,0 +1,259 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:columnCount="2"
+        tools:context="com.example.joeroger.samplesensors.fragment.SensorDemoFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:text="Sensor Type:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"/>
+
+        <TextView
+            android:id="@+id/sensor_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="Proximity"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:text="Accuracy:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"/>
+
+        <TextView
+            android:id="@+id/accuracy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="90%"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:text="Reporting Mode:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"/>
+
+        <TextView
+            android:id="@+id/reporting_mode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:text="Requires API 21"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="90%"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:text="Nanoseconds:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"/>
+
+        <TextView
+            android:id="@+id/nanoseconds"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="9939392"/>
+
+        <TextView
+            android:id="@+id/value_label_0"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="value:"/>
+
+        <TextView
+            android:id="@+id/value_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="9939392"/>
+
+        <TextView
+            android:id="@+id/value_label_1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="value:"/>
+
+        <TextView
+            android:id="@+id/value_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="9939392"/>
+
+        <TextView
+            android:id="@+id/value_label_2"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="value:"/>
+
+        <TextView
+            android:id="@+id/value_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="9939392"/>
+
+        <TextView
+            android:id="@+id/value_label_3"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="value:"/>
+
+        <TextView
+            android:id="@+id/value_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="9939392"/>
+
+        <TextView
+            android:id="@+id/value_label_4"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="value:"/>
+
+        <TextView
+            android:id="@+id/value_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="9939392"/>
+
+        <TextView
+            android:id="@+id/value_label_5"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="value:"/>
+
+        <TextView
+            android:id="@+id/value_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            tools:text="9939392"/>
+
+    </android.support.v7.widget.GridLayout>
+</ScrollView>

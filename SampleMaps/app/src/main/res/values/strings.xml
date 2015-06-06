@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Sample Maps</string>
+    <string name="title_activity_main">Seattle 911 Incidents</string>
+
+    <string name="empty_string">No 911 data is available</string>
+
+    <string name="play_services_error">Failed to resolve Google Play Services error. Restart app to try again</string>
+
+    <string name="action_map_toggle">View Map</string>
+    <string name="action_list_toggle">View List</string>
+
+    <string name="title_activity_incident_detail">Incident Details</string>
+
+</resources>

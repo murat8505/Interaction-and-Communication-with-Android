@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Sample Sensors</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="activity_detection_button">Activity Detection Demo</string>
+    <string name="sensor_demo_button">Sensor Demo</string>
+    <string name="title_activity_user_movement">User Movement Activity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_movement_empty">No User Movement Detected</string>
+    <string name="user_movement_item">%1$d%%   %2$s</string>
+    <string name="title_activity_sensor_list">Sensor List</string>
+    <string name="title_activity_sensor_demo">Sensor Demo</string>
+    <string name="empty_sensor_list">No Sensors Exist</string>
+    <string name="available_sensors_button">Available Sensors</string>
+    <string name="title_activity_no_sensor">No Sensor Demo</string>
+</resources>

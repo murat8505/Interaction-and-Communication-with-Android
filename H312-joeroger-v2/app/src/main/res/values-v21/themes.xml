@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Platform compatibility theme here. API 21 only -->
+        <!-- Demonstrating taking advantage of 5.0 (lollipop) auto coloring vs asset -->
+        <item name="android:colorButtonNormal">?colorAccent</item>
+    </style>
+
+    <!-- Custom overlay to help the spinner in the toolbar be properly styled -->
+    <style name="BaseAppThemeOverlayActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/theme.xml, while customizations related to
+            api 21+ go here.
+        -->
+        <item name="android:elevation">8dp</item>
+    </style>
+
+</resources>

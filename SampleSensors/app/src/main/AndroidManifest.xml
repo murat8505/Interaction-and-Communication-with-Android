@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.joeroger.samplesensors" >
+
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <!--
+         You can indicate whether or not a sensor is "required" in your app. If required, the
+         play store will prevent users from installing the app if they are missing the feature.
+         However, if you do not require it, you could still list the feature, but set required to
+         be false. Then handle the possibility of the sensor being null
+    -->
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+             portrait used only to prevent rotation of screen during demo as some sensors do not
+             work as well if interrupted. A service or a "persistent" fragment would be a
+             better choice.
+        -->
+        <activity
+            android:name=".activity.UserMovementActivity"
+            android:label="@string/title_activity_user_movement"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.joeroger.samplesensors.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.SensorListActivity"
+            android:label="@string/title_activity_sensor_list"
+            android:parentActivityName=".activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.joeroger.samplesensors.activity.MainActivity" />
+        </activity>
+        <!--
+             portrait used only to prevent rotation of screen during demo as some sensors do not
+             work as well if interrupted. A service etc may be a better choice.
+        -->
+        <activity
+            android:name=".activity.SensorDemoActivity"
+            android:label="@string/title_activity_sensor_demo"
+            android:parentActivityName=".activity.SensorListActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.joeroger.samplesensors.activity.SensorListActivity" />
+        </activity>
+        <activity
+            android:name=".activity.NoSensorActivity"
+            android:label="@string/title_activity_no_sensor"
+            android:parentActivityName=".activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.joeroger.samplesensors.activity.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

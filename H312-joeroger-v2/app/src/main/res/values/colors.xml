@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deep_orange_500">#FF5722</color>
+    <color name="deep_orange_700">#E64A19</color>
+    <color name="light_blue_700">#0288D1</color>
+
+    <color name="colorPrimary">@color/deep_orange_500</color>
+    <color name="colorPrimaryDark">@color/deep_orange_700</color>
+    <color name="colorAccent">@color/light_blue_700</color>
+
+    <color name="snackbarBackground">#323232</color>
+</resources>
